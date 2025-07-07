@@ -37,3 +37,31 @@ if (num5 % 7 == 0) {
 } else {
   console.log("No");
 }
+
+let num6 = 3;
+if (num6 >= 0) {
+  console.log("Eyreg");
+} else {
+  console.log("surug");
+}
+
+let nas = 19;
+if (nas <= 12) {
+  console.log("huuhed");
+} else if (nas <= 19) {
+  console.log("usvur nas");
+} else if (nas <= 59) {
+  console.log("nasand hursen");
+} else {
+  console.log("ahmad nastan");
+}
+
+let a = 7;
+let b = 7;
+if (a > b) {
+  console.log("a b ees ih");
+} else if (a < b) {
+  console.log("b a aas ih");
+} else {
+  console.log("a b tentsuu");
+}
