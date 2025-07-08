@@ -1,0 +1,23 @@
+.card {
+  width: 400px;
+  height: 600px;
+  border: solid 3px gray;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.submit-style {
+  height: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.main-text {
+  text-align: center;
+  font-size: 50px;
+}
+.submit-style {
+  width: 50px;
+  background-color: aliceblue;
+}
