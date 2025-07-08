@@ -1,7 +1,6 @@
 let num1 = document.getElementById("num1input");
 let num2 = document.getElementById("num2input");
 let num3 = document.getElementById("num3input");
-const baga = document.getElementById("baga");
 
 multiply.addEventListener("click", () => {
   console.log(
@@ -24,21 +23,44 @@ divide.addEventListener("click", () => {
   );
 });
 
-baga.addEventListener("click", () => {
-  let num1 = parseInt(num1input.value);
-  let num2 = parseInt(num2input.value);
-  let num3 = parseInt(num3input.value);
-  if (num1 < num2) {
-    if (num3 < num1) {
-      console.log(num3);
+minimum.addEventListener("click", () => {
+  let n1 = parseInt(num1input.value);
+  let n2 = parseInt(num2input.value);
+  let n3 = parseInt(num3input.value);
+  if (n1 < n2) {
+    if (n3 < n1) {
+      console.log(n3);
     } else {
-      console.log(num1);
+      console.log(n1);
     }
   } else {
-    if (num2 < num3) {
-      console.log(num2);
+    if (n2 < n3) {
+      console.log(n2);
     } else {
-      console.log(num3);
+      console.log(n3);
     }
   }
+});
+maximum.addEventListener("click", () => {
+  let n1 = parseInt(num1input.value);
+  let n2 = parseInt(num2input.value);
+  let n3 = parseInt(num3input.value);
+  if (n1 > n2) {
+    if (n3 > n1) {
+      console.log(n3);
+    } else {
+      console.log(n1);
+    }
+  } else {
+    if (n2 > n3) {
+      console.log(n2);
+    } else {
+      console.log(n3);
+    }
+  }
+});
+average.addEventListener("click", () => {
+  console.log(
+    (parseInt(num1.value) + parseInt(num2.value) + parseInt(num3.value)) / 3
+  );
 });
