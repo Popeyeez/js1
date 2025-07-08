@@ -24,9 +24,9 @@ divide.addEventListener("click", () => {
 });
 
 minimum.addEventListener("click", () => {
-  let n1 = parseInt(num1input.value);
-  let n2 = parseInt(num2input.value);
-  let n3 = parseInt(num3input.value);
+  let n1 = parseInt(num1.value);
+  let n2 = parseInt(num2.value);
+  let n3 = parseInt(num3.value);
   if (n1 < n2) {
     if (n3 < n1) {
       console.log(n3);
@@ -42,9 +42,9 @@ minimum.addEventListener("click", () => {
   }
 });
 maximum.addEventListener("click", () => {
-  let n1 = parseInt(num1input.value);
-  let n2 = parseInt(num2input.value);
-  let n3 = parseInt(num3input.value);
+  let n1 = parseInt(num1.value);
+  let n2 = parseInt(num2.value);
+  let n3 = parseInt(num3.value);
   if (n1 > n2) {
     if (n3 > n1) {
       console.log(n3);
