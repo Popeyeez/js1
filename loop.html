@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condition</title>
+  </head>
+  <body></body>
+  <script>
+    let n = 10;
+    let index = 0;
+    let factrial = 1;
+
+    while (index < n) {
+      index = index + 1;
+      factrial = factrial * index;
+    }
+    console.log("factrial", factrial);
+
+    let sum = 0;
+    let index1 = 0;
+
+    while (index1 < n) {
+      index1 = index1 + 1;
+      sum = sum + index1;
+    }
+    console.log("average", sum / 10);
+
+    let even = 0;
+    let index2 = 0;
+
+    while (index2 <= n) {
+      if (index2 % 2 == 0) {
+        even += index2;
+      }
+      index2 = index2 + 1;
+    }
+
+    console.log("tegsh toonii niilber ", even);
+    let index3 = 1;
+    let odd = 0;
+
+    while (index3 <= n) {
+      if (index3 % 2 !== 0) {
+        odd += index3;
+      }
+      index3 = index3 + 1;
+    }
+    console.log("sondgoi toonii niilber", odd);
+
+    let n1 = 0;
+    let n2 = 1;
+    let index4 = 2;
+    console.log("fabbianoci", n1);
+    console.log("fabbianoci", n2);
+
+    while (index4 <= n) {
+      let niilber = n1 + n2;
+      console.log("fabbianoci", niilber);
+      n1 = n2;
+      n2 = niilber;
+      index4 = index4 + 1;
+    }
+    let n3 = 4;
+    let result = "";
+  </script>
+</html>

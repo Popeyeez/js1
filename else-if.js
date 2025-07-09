@@ -1,29 +1,36 @@
 let num1 = document.getElementById("num1input");
 let num2 = document.getElementById("num2input");
 let num3 = document.getElementById("num3input");
+let multiplyBtn = document.getElementById("multiply");
+let sumBtn = document.getElementById("sum");
+let minusBtn = document.getElementById("minus");
+let divideBtn = document.getElementById("divide");
+let minimumBtn = document.getElementById("minimum");
+let maximumBtn = document.getElementById("maximum");
+let averageBtn = document.getElementById("average");
 
-multiply.addEventListener("click", () => {
+multiplyBtn.addEventListener("click", () => {
   console.log(
     parseInt(num1.value) * parseInt(num2.value) * parseInt(num3.value)
   );
 });
-sum.addEventListener("click", () => {
+sumBtn.addEventListener("click", () => {
   console.log(
     parseInt(num1.value) + parseInt(num2.value) + parseInt(num3.value)
   );
 });
-minus.addEventListener("click", () => {
+minusBtn.addEventListener("click", () => {
   console.log(
     parseInt(num1.value) - parseInt(num2.value) - parseInt(num3.value)
   );
 });
-divide.addEventListener("click", () => {
+divideBtn.addEventListener("click", () => {
   console.log(
     parseInt(num1.value) / parseInt(num2.value) / parseInt(num3.value)
   );
 });
 
-minimum.addEventListener("click", () => {
+minimumBtn.addEventListener("click", () => {
   let n1 = parseInt(num1.value);
   let n2 = parseInt(num2.value);
   let n3 = parseInt(num3.value);
@@ -41,7 +48,7 @@ minimum.addEventListener("click", () => {
     }
   }
 });
-maximum.addEventListener("click", () => {
+maximumBtn.addEventListener("click", () => {
   let n1 = parseInt(num1.value);
   let n2 = parseInt(num2.value);
   let n3 = parseInt(num3.value);
@@ -59,7 +66,7 @@ maximum.addEventListener("click", () => {
     }
   }
 });
-average.addEventListener("click", () => {
+averageBtn.addEventListener("click", () => {
   console.log(
     (parseInt(num1.value) + parseInt(num2.value) + parseInt(num3.value)) / 3
   );
