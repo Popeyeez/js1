@@ -1,14 +1,17 @@
 let num1 = document.getElementById("num1input");
 let num2 = document.getElementById("num2input");
 let num3 = document.getElementById("num3input");
+let num4 = document.getElementById("num4input");
+let num5 = document.getElementById("num5input");
+let num6 = document.getElementById("num6input");
+let num7 = document.getElementById("num7input");
+
 let maximumBtn = document.getElementById("maximum");
 let eyregsorogBtn = document.getElementById("eyreg-sorog");
 let guravortavBtn = document.getElementById("3or5");
 let leapyearBtn = document.getElementById("leapyear");
 let weekBtn = document.getElementById("week");
-let minimumBtn = document.getElementById("minimum");
-
-let averageBtn = document.getElementById("average");
+let resultBtn = document.getElementById("result");
 
 eyregsorogBtn.addEventListener("click", () => {
   let n1 = parseInt(num1.value);
@@ -155,5 +158,20 @@ maximumBtn.addEventListener("click", () => {
     } else {
       console.log(n3);
     }
+  }
+});
+resultBtn.addEventListener("click", () => {
+  let n4 = parseInt(num4.value);
+  let n5 = parseInt(num5.value);
+  let n6 = parseInt(num6.value);
+  let n7 = parseInt(num7.value);
+  let zardal = n4 * n5;
+  let ashig = n6 * n7;
+  let resultzardal = n4 * n5 - n6 * n7;
+  let resultashig = n6 * n7 - n5 * n4;
+  if (zardal > ashig) {
+    console.log("aldagdal " + resultzardal);
+  } else {
+    console.log("ashig " + resultashig);
   }
 });

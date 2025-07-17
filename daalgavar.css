@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .submit-style {
   height: 40px;
