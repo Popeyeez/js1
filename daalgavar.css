@@ -37,3 +37,6 @@
   box-sizing: border-box;
   justify-content: center;
 }
+span {
+  margin-left: 10px;
+}
