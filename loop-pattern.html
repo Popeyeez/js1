@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loop-pattern</title>
+  </head>
+  <body></body>
+  <script>
+    let n = 5;
+    let result = "";
+    let k = 0;
+    let result1 = "";
+    let result2 = "";
+    //1
+    while (k < n) {
+      let i = 0;
+      while (i < n) {
+        result = result + "*";
+        i++;
+      }
+      result = result + "\n";
+      k++;
+    }
+
+    console.log(result);
+    //2
+    k = 0;
+    while (k < n) {
+      let i = 0;
+      if (k == 0 || k == n - 1) {
+        while (i < n) {
+          result1 = result1 + "*";
+          i++;
+        }
+      } else {
+        while (i < n) {
+          if (i == 0 || i == n - 1) {
+            result1 = result1 + "*";
+          } else {
+            result1 = result1 + " ";
+          }
+          i++;
+        }
+      }
+      result1 = result1 + "\n";
+      k++;
+    }
+    console.log(result1);
+    //3
+    k = 0;
+
+    while (k < n) {
+      let i = 0;
+
+      // Зай нэмэх хэсэг
+      while (i < n - k - 1) {
+        result2 = result2 + " ";
+        i++;
+      }
+
+      // Од нэмэх хэсэг
+      let j = 0;
+      while (j < n) {
+        result2 = result2 + "*";
+        j++;
+      }
+
+      // Мөр дуусахад шинэ мөр
+      result2 = result2 + "\n";
+      k++;
+    }
+
+    console.log(result2);
+  </script>
+</html>
