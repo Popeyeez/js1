@@ -103,24 +103,22 @@ while (row11 > 0) {
 // **
 // *
 
-let size12 = 5;
-let row12 = 1;
-while (row12 <= size12) {
+let n = 5;
+let row1 = 1;
+while (row1 <= n) {
   let result = "";
-
   let column = 1;
-  while (column <= size12 - row12) {
+  while (column <= n - row1) {
     result = result + " ";
-    column = column + 1;
+    column++;
   }
-
-  let starCount = row12;
-  while (starCount > 0) {
+  let star = row1;
+  while (star > 0) {
     result = result + "*";
-    starCount = starCount - 1;
+    star--;
   }
+  row1++;
   console.log(result);
-  row12 = row12 + 1;
 }
 
 // ----*
