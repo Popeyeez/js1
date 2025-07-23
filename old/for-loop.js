@@ -94,7 +94,7 @@ for (let i = 0; i < size; i++) {
 let size = 5;
 for (let i = 0; i < size; i++) {
   let star = "";
-
+  let center = Math.floor(size / 2);
   for (j = 0; j < size; j++) {
     if (i === center || j === center) {
       star += "*";
