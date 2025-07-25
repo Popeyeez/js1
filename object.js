@@ -52,18 +52,6 @@ function findTopBalance(arr) {
 let topBalance = findTopBalance(students);
 console.log("Hamgiin ih mungutei", topBalance);
 
-function findLongName(arr) {
-  let longName = arr[0];
-  for (i = 0; i < arr.length; i++) {
-    if (longName.name.length < arr[i].name.length) {
-      longName = arr[i];
-    }
-  }
-  return longName;
-}
-let longName = findLongName(students);
-console.log("Urt nertei suragch", longName);
-
 function findStudentByAge(arr, nas) {
   for (i = 0; i < arr.length; i++) {
     if (arr[i].age === nas) {
@@ -126,3 +114,27 @@ const findFemaleStudent = (arr) => {
 
 const femaleStudent = findFemaleStudent(students);
 console.log("Emegtei suragch hedn huvi be", femaleStudent, "%");
+
+function findLongName(arr) {
+  let longName = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (longName.name.length < arr[i].name.length) {
+      longName = arr[i];
+    }
+  }
+  return longName;
+}
+let longName = findLongName(students);
+console.log("Urt nertei suragch", longName);
+
+const findBadStudent = (arr) => {
+  let badStudent = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (badStudent.grade > arr[i].grade) {
+      badStudent = arr[i];
+    }
+  }
+  return badStudent;
+};
+const badStudent = findBadStudent(students);
+console.log("Hamgiin muu suragch", badStudent);
