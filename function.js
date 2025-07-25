@@ -72,7 +72,8 @@ function findDay(n1) {
     return "Byamba-Garag";
   } else if (n1 == 7) {
     return "Nyam-Garag";
-  } else return "No-Garag";
+  }
+  return "No-Garag";
 }
-let day = findDay(4);
+let day = findDay(8);
 console.log(day);

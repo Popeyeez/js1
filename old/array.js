@@ -1,4 +1,4 @@
-let grades = [90, 70, 30, 100];
+let grades = [90, 70, 30, 100, 1];
 
 function findSum(arr) {
   let sum = 0;
@@ -26,3 +26,16 @@ function findMax(arr) {
 
 let maxResult = findMax(grades);
 console.log("Max grades", maxResult);
+
+function Tsum(arr) {
+  Tsum = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      Tsum = Tsum + arr[i];
+    }
+  }
+  return Tsum;
+}
+
+let FindTSum = Tsum(grades);
+console.log("Tegsh too", FindTSum);
