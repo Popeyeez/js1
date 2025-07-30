@@ -102,7 +102,7 @@ console.log(highBalanceStudents);
 // // classCode gesen field nemeh function bich
 // eg: addClassCodeToStudents(students,"3A") => [{name: "boldo",age: 3,grade: 11,gender: "male",balance: 1231,classCode:"3A"},...]
 
-function addClassCodeToSdutents(students) {
+function addClassCodeToSdutents(students, classCode) {
   let ClassStudents = students.map((student) => {
     return {
       name: student.name,
@@ -110,12 +110,12 @@ function addClassCodeToSdutents(students) {
       grade: student.grade,
       balance: student.balance,
       gender: student.gender,
-      classCode: "3A",
+      classCode: classCode,
     };
   });
   return ClassStudents;
 }
-let addClassStudents = addClassCodeToSdutents(data);
+let addClassStudents = addClassCodeToSdutents(data, "3A");
 console.log("ADD Class 3A");
 console.log(addClassStudents);
 

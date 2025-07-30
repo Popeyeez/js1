@@ -29,7 +29,10 @@ let newStudent = students.map((student) => {
 console.log(newStudent);
 
 // sort method
-// ooriign oorchlono
+// sort method function avna
+// avjgaa function n 2 utga orj irne
+// return deer + esve - too butsaana
+// sort method n array-iig ooriig n oorchlono
 
 const sortGender = students.sort((student2, student1) => {
   if (student2.gender > student1.gender) {
@@ -40,10 +43,11 @@ const sortGender = students.sort((student2, student1) => {
 });
 console.log(sortGender);
 
-// filter method
-// filter ooriign  ooorchlohgui
-// shine arr uusgej ugnu
-
+// filter
+// filter ooriig n oorchlohgui
+// shine array uusgej ogno
+// filter method neg function avna, tuhain function neg utga avna
+// return deer true baih buh element iig tsugluulaad array butsaana
 // nasand hursen suragchid
 
 function findAdultStudents(students) {
