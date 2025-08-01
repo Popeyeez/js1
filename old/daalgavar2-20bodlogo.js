@@ -66,15 +66,6 @@ let cars = [
   },
 ];
 
-const carListDiv = document.getElementById("car-list");
-let carNamePtags = "";
-cars.map((car) => {
-  carNamePtags = carNamePtags + ' <p class="carName">' + car.model + "</p>";
-});
-
-console.log(carNamePtags);
-carListDiv.innerHTML = carNamePtags;
-
 // 1. Нөөцөд байгаа (isAvailable === true) машинуудыг буцаадаг функц бич.
 function getAvailableCars(cars) {
   let availableCars = cars.filter((car) => {
